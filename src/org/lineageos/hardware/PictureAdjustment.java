@@ -20,7 +20,7 @@ package org.lineageos.hardware;
 import android.util.Range;
 
 import lineageos.hardware.HSIC;
-import vendor.lineage.livedisplay.V1_0.Feature;
+import vendor.deltaotg.livedisplay.V1_0.Feature;
 
 /**
  * Picture adjustment support

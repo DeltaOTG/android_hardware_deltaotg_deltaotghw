@@ -17,7 +17,7 @@
 
 package org.lineageos.hardware;
 
-import vendor.lineage.livedisplay.V1_0.Feature;
+import vendor.deltaotg.livedisplay.V1_0.Feature;
 
 /**
  * Color balance support

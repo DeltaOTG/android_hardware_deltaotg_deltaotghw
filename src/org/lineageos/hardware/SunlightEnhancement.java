@@ -20,7 +20,7 @@ package org.lineageos.hardware;
 import android.util.Log;
 
 import org.lineageos.internal.util.FileUtils;
-import vendor.lineage.livedisplay.V1_0.Feature;
+import vendor.deltaotg.livedisplay.V1_0.Feature;
 
 /**
  * Facemelt mode!

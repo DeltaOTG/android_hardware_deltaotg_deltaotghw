@@ -25,27 +25,27 @@ import java.util.ArrayList;
 
 class Utils {
     public static DisplayMode[] HIDLModeListToArray(
-            ArrayList<vendor.lineage.livedisplay.V1_0.DisplayMode> modes) {
+            ArrayList<vendor.deltaotg.livedisplay.V1_0.DisplayMode> modes) {
         int size = modes.size();
         DisplayMode[] r = new DisplayMode[size];
         for (int i = 0; i < size; i++) {
-            vendor.lineage.livedisplay.V1_0.DisplayMode m = modes.get(i);
+            vendor.deltaotg.livedisplay.V1_0.DisplayMode m = modes.get(i);
             r[i] = new DisplayMode(m.id, m.name);
         }
         return r;
     }
 
-    public static DisplayMode fromHIDLMode(vendor.lineage.livedisplay.V1_0.DisplayMode mode) {
+    public static DisplayMode fromHIDLMode(vendor.deltaotg.livedisplay.V1_0.DisplayMode mode) {
         return new DisplayMode(mode.id, mode.name);
     }
 
-    public static HSIC fromHIDLHSIC(vendor.lineage.livedisplay.V1_0.HSIC hsic) {
+    public static HSIC fromHIDLHSIC(vendor.deltaotg.livedisplay.V1_0.HSIC hsic) {
         return new HSIC((float) hsic.hue, hsic.saturation, hsic.intensity,
                 hsic.contrast, hsic.saturationThreshold);
     }
 
-    public static vendor.lineage.livedisplay.V1_0.HSIC toHIDLHSIC(HSIC hsic) {
-        vendor.lineage.livedisplay.V1_0.HSIC h = new vendor.lineage.livedisplay.V1_0.HSIC();
+    public static vendor.deltaotg.livedisplay.V1_0.HSIC toHIDLHSIC(HSIC hsic) {
+        vendor.deltaotg.livedisplay.V1_0.HSIC h = new vendor.deltaotg.livedisplay.V1_0.HSIC();
         h.hue = (int) hsic.getHue();
         h.saturation = hsic.getSaturation();
         h.intensity = hsic.getIntensity();
@@ -54,15 +54,15 @@ class Utils {
         return h;
     }
 
-    public static Range<Integer> fromHIDLRange(vendor.lineage.livedisplay.V1_0.Range range) {
+    public static Range<Integer> fromHIDLRange(vendor.deltaotg.livedisplay.V1_0.Range range) {
         return new Range(range.min, range.max);
     }
 
-    public static Range<Float> fromHIDLIntRange(vendor.lineage.livedisplay.V1_0.Range range) {
+    public static Range<Float> fromHIDLIntRange(vendor.deltaotg.livedisplay.V1_0.Range range) {
         return new Range((float) range.min, (float) range.max);
     }
 
-    public static Range<Float> fromHIDLRange(vendor.lineage.livedisplay.V1_0.FloatRange range) {
+    public static Range<Float> fromHIDLRange(vendor.deltaotg.livedisplay.V1_0.FloatRange range) {
         return new Range(range.min, range.max);
     }
 }

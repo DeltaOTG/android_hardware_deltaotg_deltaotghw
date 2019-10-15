@@ -25,7 +25,7 @@ import com.android.internal.annotations.GuardedBy;
 
 import lineageos.hardware.DisplayMode;
 import lineageos.hardware.HSIC;
-import vendor.lineage.livedisplay.V1_0.IColor;
+import vendor.deltaotg.livedisplay.V1_0.IColor;
 
 /**
  * This class loads an implementation of the LiveDisplay native interface.

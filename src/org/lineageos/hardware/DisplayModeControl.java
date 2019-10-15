@@ -20,7 +20,7 @@ package org.lineageos.hardware;
 import android.util.Log;
 
 import lineageos.hardware.DisplayMode;
-import vendor.lineage.livedisplay.V1_0.Feature;
+import vendor.deltaotg.livedisplay.V1_0.Feature;
 
 /*
  * Display Modes API
